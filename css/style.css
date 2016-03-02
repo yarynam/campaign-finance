@@ -4,16 +4,9 @@
 Hint: You'll want to assign a class to the associated <th> and <td> tags
 in your index.html and script.js files. */
 
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > t {
-  padding: 10px;
+tr {
+  font-weight: 300;
 }
-
-
 .amount {
   text-align: right;
 }

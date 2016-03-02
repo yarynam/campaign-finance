@@ -22,10 +22,10 @@ function loadData() {
 function writeTable(data) {
 
 	for (i=0; i<data.length; i++) {
+
     var $contributionDate = "<tr> <td>"+ data[i]["Contribution Date"] + "</td>";
     var $contributionInfo = "<td class='information'>" + data[i]["Contribution Information"] + "</td>";
     var $amount = "<td class='amount'>" + data[i]["Amount"] + "</td> </tr>";
-
 
 		$( ".donations" ).append($contributionDate + $contributionInfo + $amount);
 
