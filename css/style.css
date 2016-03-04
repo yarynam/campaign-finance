@@ -8,6 +8,10 @@ tr {
   font-weight: 300;
 }
 
+.table>tbody>tr>th {
+   border-top: 0px solid #ddd;
+ }
+
 .date {
   width: 10%;
 }
