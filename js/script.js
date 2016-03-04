@@ -26,9 +26,11 @@ function writeTable(data) {
     var $contributionDate = "<tr> <td>"+ data[i]["Contribution Date"] + "</td>";
     var $contributionInfo = "<td class='information'>" + data[i]["Contribution Information"] + "</td>";
     var $amount = "<td class='amount'>" + data[i]["Amount"] + "</td> </tr>";
+		var committe = data[i]["Committee"]
 
-		$( ".donations" ).append($contributionDate + $contributionInfo + $amount);
-
+     if ( committe === "CITIZENS TO ELECT KURT SCHAEFER ATTORNEY GENERAL") {
+	  		$( ".donations" ).append($contributionDate + $contributionInfo + $amount);
+	   }
   }
 
 }
